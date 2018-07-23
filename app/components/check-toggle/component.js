@@ -1,1 +1,0 @@
-export { default } from 'ember-check-toggle/components/check-toggle/component';
