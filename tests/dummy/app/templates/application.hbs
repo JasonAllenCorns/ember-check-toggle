@@ -1,5 +1,10 @@
 <h2 id="title">Welcome to Ember</h2>
 <p>
+    {{#check-toggle}}
+        template block text
+    {{/check-toggle}}
+</p>
+<p>
     {{#check-toggle checked-text="Go Ahead" open-text="Don't Do It" 
     type="confirm-cancel" size="xl" name="someModelProperty" isChecked=true}}Extra-large, confirm-cancel, toggle switch{{/check-toggle}}
 </p>
