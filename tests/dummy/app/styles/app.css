@@ -1,0 +1,145 @@
+.check-toggle {
+    cursor: pointer;
+    /* Transition
+      ========================== */
+    /* toggle labels
+      ==========================*/
+  }
+  .check-toggle .toggle-track {
+    position: relative;
+    display: inline-flex;
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 18px;
+  }
+  .check-toggle .toggle-handle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 5;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0 0 1px #454545;
+  }
+  .check-toggle input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .check-toggle .toggle-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    overflow: hidden;
+    border-radius: inherit;
+  }
+  .check-toggle .toggle-track .toggle-label-before,
+  .check-toggle .toggle-track .toggle-label-after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px 9% 0 9%;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 1;
+    color: #454545;
+    text-transform: uppercase;
+    border-radius: 18px;
+    opacity: 1;
+  }
+  .check-toggle .toggle-track .toggle-label-after {
+    top: 50%;
+    right: 100%;
+    bottom: 50%;
+    left: 14px;
+    z-index: 1;
+    padding-right: 0;
+    content: attr(data-checked-text);
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+  }
+  .check-toggle .toggle-track .toggle-label-before {
+    z-index: 0;
+    padding-left: 0;
+    content: attr(data-open-text);
+  }
+  .check-toggle input:checked ~ .toggle-handle {
+    left: 32px;
+  }
+  .check-toggle .toggle-label ~ .toggle-label-after,
+  .check-toggle .toggle-handle {
+    -webkit-transition: All .3s ease;
+    -moz-transition: All .3s ease;
+    -o-transition: All .3s ease;
+    transition: All .3s ease;
+  }
+  .check-toggle .toggle-label {
+    overflow: hidden;
+  }
+  .check-toggle .toggle-track .toggle-label-before {
+    /* this color must only be applied by secondary selector like "toggle-toggle toggle-toggle-success" */
+    text-align: right;
+    background: #cacaca;
+  }
+  .check-toggle .toggle-track .toggle-label-after {
+    text-align: left;
+    background: #e1e1e1;
+    /* this color must only be applied by secondary selector like "toggle-toggle toggle-toggle-success" */
+  }
+  .check-toggle input:checked ~ .toggle-label-after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .check-toggle.toggle-success-on .toggle-label + .toggle-label-after {
+    background: #9eb541 !important;
+  }
+  .check-toggle.toggle-danger-on .toggle-label + .toggle-label-after {
+    color: #f9f9f9 !important;
+    background: #c61d23 !important;
+  }
+  .check-toggle.toggle-warning-on .toggle-label + .toggle-label-after {
+    background: #f7941d !important;
+  }
+  .check-toggle.toggle-yes-no .toggle-track .toggle-label-before {
+    color: #f9f9f9 !important;
+    background: #c61d23 !important;
+  }
+  .check-toggle.toggle-yes-no .toggle-label + .toggle-label-after {
+    background: #9eb541 !important;
+  }
+  .check-toggle.toggle-confirm-cancel .toggle-track .toggle-label-before {
+    background: #f9f9f9 !important;
+    box-shadow: inset 0 0 1px #cacaca;
+  }
+  .check-toggle.toggle-confirm-cancel .toggle-label + .toggle-label-after {
+    color: #f9f9f9;
+    background: #009bd4 !important;
+  }
+  .check-toggle.toggle-xl .toggle-track {
+    width: 100px;
+  }
+  .check-toggle.toggle-xl input:checked ~ .toggle-handle {
+    left: 72px;
+  }
+  .check-toggle.toggle-lg .toggle-track {
+    width: 80px;
+  }
+  .check-toggle.toggle-lg input:checked ~ .toggle-handle {
+    left: 52px;
+  }

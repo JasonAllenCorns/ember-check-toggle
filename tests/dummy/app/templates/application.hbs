@@ -1,3 +1,33 @@
 <h2 id="title">Welcome to Ember</h2>
-
+<p>
+    {{#check-toggle checked-text="Go Ahead" open-text="Don't Do It" 
+    type="confirm-cancel" size="xl" name="someModelProperty" isChecked=true}}Extra-large, confirm-cancel, toggle switch{{/check-toggle}}
+</p>
+<p>
+    {{#check-toggle checked-text="On" open-text="Off" 
+        type="success-on" size="lg" name="anotherModelProperty" isChecked=false value="myValue"}}Large, success-on, toggle switch{{/check-toggle}}
+</p>
+<p>
+    {{#check-toggle checked-text="On" open-text="Off" 
+    type="success-on" size="md"}}Medium, success-on, toggle switch (default){{/check-toggle}}</p>
+<p>
+    {{#check-toggle checked-text="On" open-text="Off" 
+        type="success-on" isChecked=true}}"Success-on" type{{/check-toggle}}
+</p>
+<p>
+    {{#check-toggle checked-text="On" open-text="Off" 
+        type="warning-on" isChecked=true}}"Warning-on" type{{/check-toggle}}
+</p>
+<p>
+    {{#check-toggle checked-text="On" open-text="Off" 
+        type="danger-on" isChecked=true}}"Danger-on" type{{/check-toggle}}
+</p>
+<p>
+    {{#check-toggle checked-text="Yes" open-text="No" 
+        type="yes-no" isChecked=true}}"Yes-No" type{{/check-toggle}}
+</p>
+<p>
+    {{#check-toggle checked-text="Confirm" open-text="Cancel" 
+        type="confirm-cancel" isChecked=true}}"Confirm-Cancel" type{{/check-toggle}}
+</p>
 {{outlet}}
