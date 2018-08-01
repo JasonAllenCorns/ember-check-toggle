@@ -14,7 +14,8 @@ ember install ember-check-toggle
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+### Basic implementation
+
 
 
 Contributing
@@ -47,4 +48,4 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 License
 ------------------------------------------------------------------------------
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is unlicensed.
